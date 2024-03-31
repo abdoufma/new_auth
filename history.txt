@@ -1,0 +1,20 @@
+#V2
+SELECT * FROM users;
+DELETE FROM users WHERE name = 'Hamid' OR array::len(app_types) > 0
+DELETE FROM users WHERE name = 'Hamid' OR app_types != NONE
+SELECT * FROM users;
+DELETE FROM users
+INSERT INTO users [{\n                email: 'hamid@gmail.com',\n                id: users:55ev2e36cxtn4znynr2e,\n                name: 'Hamid',\n                password: 'ham123',\n                role: 'user'\n        },\n        {\n                age: 27,\n                app_types: [\n                        appointment_types:jiouudkyul1zjflh70cl,\n                        appointment_types:5vri3vydtsalm1wb79cv,\n                        appointment_types:l55uttye4fp8qcdwvy4c\n                ],\n                email: 'gh.abds',\n                id: users:abds,\n                name: 'Abds',\n                password: 'abds'\n        }];
+SELECT * FROM users;
+UPDATE users SET app_types = NONE
+INSERT INTO users [{ id: "1", email: 'admin', password: "admin", name: 'Admin', role: 'admin' },\n{ id: "2", email: 'abds', password: "abds", name: 'abds', role: 'user' },\n{ id: "3", email: 'rfk', password: "rafik", name: 'Rafik', role: 'user' }];
+SELECT * FROM users:`3` 
+SELECT * FROM users:3
+DELETE users;
+INSERT INTO users [{ id: "1", email: 'admin', password: "admin", name: 'Admin', role: 'admin' },\n{ id: "2", email: 'abds', password: "abds", name: 'abds', role: 'user' },\n{ id: "3", email: 'rfk', password: "rafik", name: 'Rafik', role: 'user' }];
+SELECT * FROM users:3
+SELECT * FROM users
+DELETE FROM users;
+SELECT * FROM users
+DELETE FROM users;
+SELECT * FROM users

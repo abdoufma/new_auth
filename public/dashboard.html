@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    {{#if name}}
+    <h2>Welcome Home, {{name}}!</h2>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/admin/protected">Protected resource</a>
+    <a href="/logout">Logout</a>
+    <a href="{{frontendURL}}/dashboard">Dashboard(NEXT)</a>
+    {{else}}
+    <h1>Welcome Home.</h1>
+    <p>Your are <em>NOT</em> logged in!</p>
+    {{/if}}
+</body>
+
+</html>
